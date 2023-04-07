@@ -1,58 +1,145 @@
-Q: What are the five functions of a digital computer?
-A: The five functions of a digital computer are taking data as input, storing data, processing data, generating output, and controlling all these steps.
+Q: What is a Neural Radiance Field (NeRF)?
+A: NeRF is a deep-learned geometric representation that encodes 3D geometry and color in a neural network, producing photo-realistic images through ray tracing.
 
-Q: What is an input device?
-A: An input device is a peripheral or hardware equipment used to provide data and control signals to a computer system, such as a keyboard or mouse.
+Q: How is NeRF different from other environment representations, like point clouds or voxel models?
+A: NeRF represents the environment as a continuous volumetric density and RGB values, trained on dense photographic images. It can efficiently store geometry as neural network weights, making it well-suited for memory constrained systems.
 
-Q: What is RAM?
-A: RAM, or Random Access Memory, is a computer memory scheme responsible for storing data temporarily that can be accessed by the processor promptly.
+Q: What is the objective of the proposed algorithm for navigating a robot through a NeRF environment?
+A: The objective is to navigate a robot through unoccupied space in the NeRF to reach a goal pose, using only an onboard RGB camera for localization.
 
-Q: What is the difference between ROM and RAM?
-A: ROM is a permanent storage device that does not allow modifications, while RAM is volatile in nature and can be erased once the supply to the storage device is turned off.
+Q: How does the trajectory optimization algorithm avoid collisions with high-density regions in the NeRF?
+A: The trajectory optimization algorithm is based on a discrete time version of differential flatness, which plans full, dynamically feasible trajectories that avoid collisions with high-density regions of the NeRF.
 
-Q: What is an output device?
-A: An output device is a piece of computer hardware used to communicate the results of data processing carried out by a computer, such as a printer or monitor.
+Q: How is the NeRF's image synthesis used to estimate the dynamic state of the robot in the environment?
+A: An optimization-based filter is used to estimate the dynamic state of the robot, balancing a dynamics prediction loss and a NeRF-based photometric loss, enabling the filter to estimate the robot's pose and velocity from an onboard RGB image.
 
-Q: What is system software?
-A: System software is responsible for controlling and managing the individual hardware components of a computer system, such as an operating system and fundamental utilities.
+Q: What is the purpose of the online replanning loop in the navigation pipeline?
+A: The online replanning loop combines the trajectory planner and the filter in feedback to provide a full navigation pipeline for a robot to dynamically maneuver through a NeRF environment.
 
-Q: What is application software?
-A: Application software is computer software designed to help the user perform specific tasks, such as word processing or database management.
+Q: How does the proposed navigation pipeline compare to other vision-only navigation systems?
+A: The proposed navigation pipeline focuses on NeRFs as a geometric environment representation that enables any robot to navigate through it, differing from end-to-end approaches and specific training data and labels.
 
-Q: What is the CPU responsible for?
-A: The CPU is responsible for all the functions and processes of a computer, and it is comprised of an Arithmetic Logic Unit, a Control Unit, and Registers.
+Q: What are some advantages of using NeRFs as an environment representation for robots?
+A: NeRFs can compactly encode detailed 3D geometry and color, are efficient in memory-constrained systems, and can produce photo-realistic synthetic images. They can also handle transparent objects and render moving and deformable objects.
 
-Q: What is a hard disk?
-A: A hard disk is a device that stores and provides relatively quick access to large amounts of data on an electromagnetically charged surface, which is part of a unit called a disk drive or hard drive.
+Q: What simulators were used to present results in the paper?
+A: The proposed navigation pipeline was run with custom-trained NeRF models of a playground, a church, and Stonehenge in high fidelity simulation environments.
 
-Q: What is the difference between primary and secondary memory?
-A: Primary memory, such as RAM, is responsible for storing data temporarily and accessing it promptly, while secondary memory, such as a hard drive, stores data and programs permanently and retains them even when the power is turned off.
-Q: What is the basic unit used in computer data storage?
-A: The basic unit used in computer data storage is called a bit.
+Q: How was the performance of the trajectory planner and pose estimator evaluated?
+A: The performance was evaluated on the underlying ground truth mesh models, not the trained NeRF models, demonstrating robustness to model mismatch between the real-world scene and the trained NeRF.
+Q: What is a NeRF?
+A: A NeRF is a neural radiance field used to represent 3D environments with color and density information.
 
-Q: What is the system software and why is it necessary for application software?
-A: System software is a type of computer software that is designed to operate and control computer hardware. Application software cannot run without the presence of the system software.
+Q: How does the NeRF-based collision metric work?
+A: The NeRF-based collision metric uses the probability of terminating a light ray as a proxy for collision probability, with the density output of the NeRF evaluated at the position of the robot body.
 
-Q: How is computer speed measured?
-A: The speed of the Central Processing Unit (CPU) is measured by Hertz (Hz), which represent a CPU cycle.
+Q: What does differential flatness refer to in the context of trajectory planning?
+A: Differential flatness refers to a property of some dynamical systems, such as quadrotors, where the system inputs and states can be represented using a smaller set of "flat outputs" and their derivatives.
 
-Q: What are Trojans and how do they work?
-A: Trojans are computer programs that claim to do one thing but instead do damage when you run them. They have no way to replicate automatically.
+Q: How is the trajectory optimization problem formulated in this paper?
+A: The trajectory optimizer seeks a set of flat output waypoints that minimize a multi-objective cost function, which includes a collision penalty and a control penalty.
 
-Q: What is a virus?
-A: A virus is a small piece of software that piggybacks on real programs and has the chance to reproduce or wreak havoc.
+Q: How is the state estimation filter formulated in this paper?
+A: The state estimation filter adds a process loss term to the photometric loss used in a previous method for estimating the robot's pose. It uses a recursive optimization approach to estimate the robot's pose and its derivatives.
 
-Q: What is the difference between data and information?
-A: Data is unstructured facts and figures while information has been contextualized, categorized, calculated, and condensed.
+Q: How does the proposed pipeline use a NeRF representation of the environment?
+A: The proposed pipeline uses a NeRF representation of the environment for both planning and localization. The robot plans its path through the environment using the NeRF-based collision metric, and updates its belief about its state using the NeRF as a nonlinear measurement model.
 
-Q: What is the difference between a personal computer and a workstation?
-A: A personal computer is a small, single-user computer based on a microprocessor used for everyday tasks while a workstation is a powerful, single-user computer used for more intensive tasks.
+Q: What is the advantage of using differential flatness in trajectory planning?
+A: Differential flatness allows for a smaller set of "flat outputs" and their derivatives to be used to represent a dynamical system's inputs and states, which can speed up planning and make the optimization problem easier to solve.
 
-Q: What are the characteristics of a computer?
-A: The characteristics of a computer are speed, accuracy, diligence, storage capability, and versatility.
+Q: How does the proposed method differ from traditional trajectory planning methods?
+A: The proposed method represents obstacles implicitly using the NeRF density, rather than in closed-form like traditional methods, and uses a denser set of waypoints whose location can be optimized directly.
 
-Q: What is a netbook?
-A: A netbook is a type of laptop that is designed to be more portable and cheaper than laptops or desktops.
+Q: How is the collision probability included in the trajectory optimization cost function?
+A: The collision probability is included in the cost function as a penalty term that depends on the NeRF density and the distance traveled by each point in the robot's point cloud.
 
-Q: How can viruses be avoided?
-A: Viruses can be avoided by installing anti-virus software, using a virus scan before opening new programs or files, being cautious when accepting files or clicking links online, and regularly backing up important data.
+Q: What is the benefit of using a recursive SE(3) optimization for state estimation?
+A: Using a recursive optimization approach allows for the estimation of the robot's pose and its derivatives, which makes the state estimation more robust and useful for other robotics algorithms.
+Q: What is the objective of the proposed state estimator in the paper?
+A: The objective of the proposed state estimator is to estimate the robot's pose and its derivatives more robustly, especially in regions of low photometric gradient information.
+
+Q: How is the state estimation updated in the proposed filter?
+A: The state estimation is updated using the dynamics model and measurement data in the proposed filter.
+
+Q: What is the role of the NeRF model in the proposed online replanning pipeline?
+A: The NeRF model is used in the proposed online replanning pipeline to reason about collisions and plan dynamically feasible trajectories.
+
+Q: How does the proposed trajectory optimizer compare to minimum-snap trajectory planning in terms of optimization?
+A: The proposed trajectory optimizer is capable of optimizing the locations of waypoints based on the NeRF, while minimum-snap trajectory planning typically uses hand-placed waypoints.
+
+Q: What is the advantage of recursive SE (3) gradient descent over the method used in prior work?
+A: Recursive SE (3) gradient descent converges quicker and more smoothly than the method used in prior work, which is attributed to the noisy photometric loss landscape over the SE (3) manifold.
+
+Q: How is the covariance of the posterior determined in the proposed state estimator?
+A: The covariance of the posterior is determined using the known relationship between the Hessian of a Gaussian loss function and the covariance.
+
+Q: How does the proposed online replanning pipeline account for disturbances during execution?
+A: The proposed online replanning pipeline takes in new sensor data and updates its belief about the robot's state, and the new mean is used as a starting state for re-optimizing the trajectory.
+
+Q: What is the purpose of the subset of pixels J in the proposed state estimator?
+A: The subset of pixels J is selected to bias the sampling around areas of higher gradient information and identify points of interest for evaluation.
+
+Q: What type of robot is used to demonstrate the proposed planner in the paper?
+A: The proposed planner is demonstrated using both a quadrotor and an omnidirectional, couch-shaped mobility robot.
+
+Q: How is the collision loss objective in the proposed trajectory optimizer evaluated?
+A: The collision loss objective in the proposed trajectory optimizer is evaluated by comparing the NeRF predicted collisions with the ground truth mesh intersecting volume during trajectory planning.
+Q: What is the main advantage of the proposed trajectory planner?
+A: The proposed trajectory planner allows robots to navigate collision-free through the use of NeRF representations of the environment. 
+
+Q: How does the proposed filter improve state estimation compared to a dynamically-initialized iNeRF estimator?
+A: The proposed filter outperforms a dynamically-initialized iNeRF estimator in rotational, translational, and velocity estimates while also sporting lower variance. 
+
+Q: What is the size of the drone used in the evaluation of the proposed methods?
+A: The drone used in the evaluation is 0.5cm³ in volume. 
+
+Q: What is the purpose of online replanning in the proposed pipeline?
+A: Online replanning allows the robot to adapt to unexpected changes and continue to reach its goal through the generation of collision-free trajectories. 
+
+Q: How long does it typically take for the initial trajectory to be optimized?
+A: The initial trajectory typically requires 20 seconds over 2500 iterations to optimize. 
+
+Q: What is the proposed method for utilizing multiple NeRFs to represent scenes with movable objects?
+A: The proposed method for utilizing multiple NeRFs is not mentioned in the given passage. 
+
+Q: What is the proposed method for reducing collision risk based on uncertainty metrics calculated by the state estimator?
+A: The proposed method for reducing collision risk based on uncertainty metrics is mentioned as a possible direction for future work. 
+
+Q: What is the purpose of the proposed perception-control integration?
+A: The proposed perception-control integration seeks to improve navigation by encouraging trajectories to point the camera in directions with greater gradient information. 
+
+Q: What is the proposed method for improving execution speed of the algorithm?
+A: The proposed method for improving execution speed is to leverage improvements in the underlying NeRF representation. 
+
+Q: What type of robot is the proposed method implemented on in the future?
+A: The proposed method is planned to be implemented on quadrotors in real scenes to demonstrate performance beyond simulation.
+Q: What is PixelNeRF?
+A: PixelNeRF is a neural radiance field method used for generating high-resolution 3D images from only one or few 2D images.
+
+Q: What is FastNeRF?
+A: FastNeRF is a high-fidelity neural rendering method that can produce 200 frames per second.
+
+Q: What are Implicit Surface Representations?
+A: Implicit Surface Representations are neural network layers used for 3D shape representation.
+
+Q: What is DeepSDF?
+A: DeepSDF is a method used for learning continuous signed distance functions for shape representation.
+
+Q: What are Implicit Neural Representations with Periodic Activation Functions?
+A: Implicit Neural Representations with Periodic Activation Functions are a type of neural representation method used for generating implicit surfaces with a periodic activation function.
+
+Q: What are Occupancy Networks?
+A: Occupancy Networks are a type of neural network used for learning 3D reconstruction in function space.
+
+Q: What is iNeRF?
+A: iNeRF, or inverting neural radiance fields, is a method used for pose estimation.
+
+Q: What is the purpose of trajectory optimization?
+A: The purpose of trajectory optimization is to calculate the optimal path for a moving object while avoiding obstacles and adhering to constraints.
+
+Q: What is the Minimum Snap Trajectory Generation method?
+A: The Minimum Snap Trajectory Generation method is a control method used for generating the optimal trajectory of quadrotors.
+
+Q: What are the Schwartz and Sharir Piano Movers Problems?
+A: The Schwartz and Sharir Piano Movers Problems are mathematical problems that involve moving a two-dimensional rigid polygonal body amidst polygonal barriers.
