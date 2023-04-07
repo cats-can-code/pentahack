@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "warm-alliance-382609",
+  "private_key_id": "3f2a83a30ac5bb1363f85fc0ca3a04d603227414",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCoy8GhZA262Pha\ny5RabGeweRj8jMAPgOkMKqQR+EjPdHhyjbrAxDsecUnZhtegdaw4k0S7lzGY1Syj\nlEmC3yIGuQdCd8m7Ne3aRjGSZdWxNwI3HTbdMcdYZ4EWNggtealJ2UEeJ1f1Y3Rt\noEGlXl0EyGSffgGKXySPNv3Kx87loidb2P15KTJq7U5Jkc/N1vu7Ox0/ZRI4uTCt\nEzusCi4sQfQ2TEp7wyqz7iGtLBA9RqTB1OoboCRPOx/408P7tNmziaiey6Rmb8Ym\nboptQczxKgW2tneAjtiznkEqb3HnPdnr5oNCLspOHu60SGaUVxZAQJE1AcsfgVO5\nwbmIkJwRAgMBAAECggEACEJ6MzfLvTLR9P1vwRH7a++tDj9OmaOc+RxauB9juV+8\nEhzx1cN0bMut3wVXEVIYxJGeRCYEm7ODZ5jBanRD5xDQSbYbYBFmQMSntyp2WmGJ\noUvzwT9RlMzxzItbJeswDRNNZANDAwNkG9uC7YDl1oP+JS4mYftAX9ADe2lWFuHz\n9LluB6SWEiirUZs6zCBQ1niLDHE2l4NcTbNS45p0fEdUyWP1cUcazXDEExFszkr6\n8qD8xJlbOx8yAcP47aafoqv0du3SHMKgd+iSzi9mXJJoxvzE3F/6vxrDT04rNSrL\ncIXHWkLOIm3Tug0K/Ygrt1B2GusyZp+3KPl66UEb/QKBgQDcxshVAwnm33IjU7AG\nnFLGLgZx4fMBxsC+NSozvWFkYdd+SQpzQU5wtnzW76z3fwTFgjAyFlN3SliygWsP\nZkHLnYIIAWq5SXXU+J7X/Qy/z+qEFBMA6Jhp30RZfspGEZUDQ8arOPsRxgiRzv14\nkJHuj6qc2Q+uZ3aK47lmV5a9TQKBgQDDuevUpZIF+cHDgIZsptIM7FKwiqq4E/2j\nI2jOwUiAqdPfzo6nnMJ8QM+7uP4vdOgDghd3OifDODFcKr436Ppi4sRGgWckQ1/M\nB54AK2tj3VpoL2yB7JzInYkcGuLvynT2S9pgmrAzO/tJ92KmBIdonggbiZOH8rnZ\nnjBNENgH1QKBgHl2g9EBkvkKBemZqUZ5yrBtse4FuYRIrNH4vfcpQePQUJaR6MXw\nMA+i1pwJ0Md5gk6HiayEy/bdWF8dBKG8SIaVaWyuGuFFoSZCgmGiPtloskVoJexi\nCzh0NU5nizFxiuH479xTxQ3KPfy6PImQQDlXoS4Z3Z6+HWHcV6wOlEghAoGAcahA\na16uWiv7ufSjmuqQpZKCPiR4GKb7LcX9MbsJyDVWZOvE6U5dndvhBcjaSmKf7JGZ\n4NFzj6jM+RGVHlB7PfsjMTIp2+QH+CogNUcBeJ9sxX1sjFIDhXf9y8VNLSQrIW9Q\n47JQSaA2P3CZ54BPxY+nc55DfrmT9OwobkguuvUCgYAaEh0Cmo9a3oQLw7mp45ax\nibm7Z9t4ZwoLsd5cYIuDciu1MvhyhriY2oJmkeGIYzFapLSnyC4HQwC9PwJ0Hyio\nj1V/4uNUC6OW6QKppSQlJeMFmaRXQp9rf3IcnCQl7yG295et/VeyAATeaINCxmp7\naT88ApTL+3TzBodF1/WIcQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "my-docai-sa@warm-alliance-382609.iam.gserviceaccount.com",
+  "client_id": "114351609202586694957",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/my-docai-sa%40warm-alliance-382609.iam.gserviceaccount.com"
+}

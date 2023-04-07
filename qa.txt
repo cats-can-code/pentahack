@@ -1,0 +1,58 @@
+Q: What is a computer?
+A: A computer is an electronic device that can accept data, process it, generate output, and store information for future use.
+
+Q: What are the functions of a computer?
+A: A computer performs five functions: input, storage, processing, output, and control.
+
+Q: What are the components of a computer?
+A: The hardware components of a computer include the monitor, mouse, keyboard, data storage devices, graphic cards, sound cards, memory, motherboard, and chips.
+
+Q: What is the role of an input device?
+A: An input device is used to provide data and control signals to a computer or information appliance, allowing the computer to process the data and convert it into useful information.
+
+Q: What is the role of a CPU in a computer?
+A: The CPU is responsible for all functions and processes in a computer system. It is comprised of an Arithmetic Logic Unit (ALU), Control Unit (CU), and Registers.
+
+Q: What is the difference between RAM and ROM?
+A: RAM is a volatile memory scheme responsible for storing data temporarily, while ROM is a permanent form of storage that remains active regardless of power supply.
+
+Q: What are the types of output devices?
+A: The main types of output devices include monitors, printers, plotters, speakers, and projectors.
+
+Q: What is the role of system software?
+A: System software controls, integrates, and manages the individual hardware components of a computer system, allowing other software and users to interact with it as a functional unit.
+
+Q: What is the role of application software?
+A: Application software is designed to help users perform specific tasks and includes programs such as web browsers, word processors, spreadsheets, and presentation software.
+
+Q: What is the basic unit used in computer data storage?
+A: The basic unit used in computer data storage is a bit, which is composed of ones and zeros and used to store and process information.
+Q: What is the basic unit used in computer data storage?
+A: The basic unit used in computer data storage is called a bit.
+
+Q: What is the difference between the binary number system and the decimal number system?
+A: The binary number system has only two numbers (0 and 1) while the decimal number system has ten unique digits (0 through 9).
+
+Q: What is the speed of Central Processing Unit (CPU) measured by?
+A: The speed of Central Processing Unit (CPU) is measured by Hertz (Hz).
+
+Q: What is the difference between a personal computer and a workstation?
+A: A personal computer is a small, single-user computer based on a microprocessor while a workstation is a more powerful, single-user computer with a higher-quality monitor.
+
+Q: What is the difference between a minicomputer and a mainframe computer?
+A: A minicomputer is a multi-user computer capable of supporting from 10 to hundreds of users simultaneously while a mainframe is a powerful multi-user computer capable of supporting many hundreds or thousands of users simultaneously.
+
+Q: What is a laptop?
+A: A laptop is a battery or AC-powered personal computer that can be easily carried and used in a variety of locations.
+
+Q: What is a mobile device?
+A: A mobile device is any handheld computer that is designed to be extremely portable, often fitting in the palm of your hand or in your pocket.
+
+Q: What is the difference between data and information?
+A: Data is unstructured facts and figures while information is data that is contextualized, categorized, calculated, and condensed.
+
+Q: What are the key characteristics of a computer?
+A: Speed, accuracy, diligence, storage capability, and versatility are some of the key characteristics of a computer.
+
+Q: What is a virus?
+A: A virus is a small piece of software that piggybacks on real programs and can replicate itself or cause damage.
